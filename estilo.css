@@ -78,6 +78,10 @@ nav a:hover{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
+    transition: height 1.3s;
+}
+.caja:hover{
+    height: 250px;
 }
 .caja1{
     background-image: url(img/nike.png);
