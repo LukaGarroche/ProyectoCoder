@@ -10,23 +10,16 @@ html{
 body{
     background-color: beige;
 }
+.navbar a{
+    color: yellow !important;
+}
 a{
     text-decoration: none;
     color: yellow;
 }
-.fa-user{
-    border: 2px solid yellow;
-    border-radius: 100%;
-    padding: 14px;
-}
-.fa-cart-shopping{
-    border: 2px solid yellow;
-    border-radius: 80%;
-    padding: 14px;
-}
 header{
     display: flex;
-    height: 70px;
+    height: 110px;
     background-color: black;
     justify-content: space-between;
     align-items: center;
