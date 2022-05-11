@@ -7,15 +7,18 @@
 html{
     scroll-behavior: smooth;
 }
+
+$color1: yellow;
+
 body{
     background-color: beige;
 }
 .navbar a{
-    color: yellow !important;
+    color: $color1 !important;
 }
 a{
     text-decoration: none;
-    color: yellow;
+    color: $color1;
 }
 header{
     display: flex;
@@ -41,7 +44,7 @@ nav a:hover{
     color: white;
 }
 .envio{
-    background-color: yellow;
+    background-color: $color1;
     border: 1px solid #000;
     text-align: center;
 }
@@ -71,7 +74,7 @@ nav a:hover{
 .caja{
     height: 200px;
     width: 200px;
-    color: yellow;
+    color: $color1;
     border: 2px solid #000;
     font-size: 28px;
     line-height: 200px;
@@ -185,7 +188,7 @@ footer i{
 .subir{
     height: 40px;
     width: 40px;
-    background-color: yellow;
+    background-color: $color1;
     border: 5px solid #000;
     color: #000;
     text-align: center;
@@ -250,6 +253,11 @@ footer i{
     }
     footer p{
         font-size: 20px;
+    }
+}
+@media only screen and (min-width:360px) and (max-width:446px){
+    footer{
+        margin-top: 600px;
     }
 }
 @media only screen and (min-width:424px) and (max-width:479px){
