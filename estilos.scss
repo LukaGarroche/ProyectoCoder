@@ -8,13 +8,16 @@ html{
     scroll-behavior: smooth;
 }
 
+$colorbg: beige;
 $color1: yellow;
 
 body{
-    background-color: beige;
+    background-color: $colorbg;
 }
 .navbar a{
     color: $color1 !important;
+    font-weight: 600;
+    padding-right: 20px;
 }
 a{
     text-decoration: none;
@@ -32,16 +35,9 @@ header{
     display: flex;
     align-items: center;
 }
-.logo img{
+img{
     height: 50px;
     margin-right: 5px;
-}
-nav a{
-    font-weight: 600;
-    padding-right: 20px;
-}
-nav a:hover{
-    color: white;
 }
 .envio{
     background-color: $color1;
@@ -55,6 +51,52 @@ nav a:hover{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
+    .caja{
+        height: 200px;
+        width: 200px;
+        color: $color1;
+        border: 2px solid #000;
+        font-size: 28px;
+        line-height: 200px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-transform: uppercase;
+        transition: height 1.3s;
+    }
+    .caja:hover{
+            height: 250px;
+    }
+    .caja1{
+        background-image: url(img/nike.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .caja2{
+        background-image: url(img/addias.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .caja3{
+        background-image: url(img/puma.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .caja4{
+        background-image: url(img/umbro.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .caja5{
+        background-image: url(img/fila.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .caja6{
+        background-image: url(img/reebok.jpg);
+        background-size: cover;
+        background-position: center;
+    }
 }
 .sec{
     width: 100%;
@@ -71,57 +113,6 @@ nav a:hover{
     font-size: 40px;
     font-family: "DIN Next LT Pro Bold.otf";
 }
-.caja{
-    height: 200px;
-    width: 200px;
-    color: $color1;
-    border: 2px solid #000;
-    font-size: 28px;
-    line-height: 200px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
-    transition: height 1.3s;
-}
-.caja:hover{
-    height: 250px;
-}
-.caja1{
-    background-image: url(img/nike.png);
-    background-size: cover;
-    background-position: center;
-}
-.caja2{
-    background-image: url(img/addias.png);
-    background-size: cover;
-    background-position: center;
-}
-.caja3{
-    background-image: url(img/puma.png);
-    background-size: cover;
-    background-position: center;
-}
-.caja4{
-    background-image: url(img/umbro.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.caja5{
-    background-image: url(img/fila.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.caja6{
-    background-image: url(img/reebok.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.container{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 .titulo{
     width: 100%;
     text-align: center;
@@ -129,18 +120,28 @@ nav a:hover{
     margin: 40px 0 10px 0;
     font-size: 30px;
 }
-.box img{
-    width: 320px;
-    height: 360px;
-    border-radius: 30px;
-}
-.box{
-    margin: 50px;
-}
-.box p{
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    a{
+        color: #000;
+    }
+    .box img{
+        width: 320px;
+        height: 360px;
+        border-radius: 30px;
+    }
+    .box{
+        margin: 50px;
+    }
+    .box p{
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
 }
 .sucursales{
     text-align: center;
@@ -160,18 +161,19 @@ nav a:hover{
     grid-template-rows: 1fr 1fr 1fr;
     gap: 16px;
     margin: auto auto 80px auto;
-}
-.grid img{
-    width: 100%;
-    height: 100%;
-}
-.img1{
-    grid-column: 1/3;
-    grid-row: 1/2;
-}
-.img2{
-    grid-column: 1/3;
-    grid-row: 2/3;
+    
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .img1{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .img2{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
 }
 footer{
     height: auto;
@@ -180,10 +182,11 @@ footer{
     line-height: 3;
     text-align: center;
     color: #fff;
-}
-footer i{
-    color: #fff;
-    letter-spacing: 15px;
+
+    i{
+        color: #fff;
+        letter-spacing: 15px;
+    }
 }
 .subir{
     height: 40px;
