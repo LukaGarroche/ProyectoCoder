@@ -73,29 +73,24 @@ img{
         background-position: center;
     }
     .caja2{
+        @extend .caja1;
         background-image: url(img/addias.png);
-        background-size: cover;
-        background-position: center;
     }
     .caja3{
+        @extend .caja1;
         background-image: url(img/puma.png);
-        background-size: cover;
-        background-position: center;
     }
     .caja4{
+        @extend .caja1;
         background-image: url(img/umbro.jpg);
-        background-size: cover;
-        background-position: center;
     }
     .caja5{
+        @extend .caja1;
         background-image: url(img/fila.jpg);
-        background-size: cover;
-        background-position: center;
     }
     .caja6{
+        @extend .caja1;
         background-image: url(img/reebok.jpg);
-        background-size: cover;
-        background-position: center;
     }
 }
 .sec{
